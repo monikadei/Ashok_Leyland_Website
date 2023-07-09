@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body background="{{ url_for('static', filename='bg-1.jpg') }}">
+    
+    <header>
+        <img src="{{ url_for('static', filename='Ashok_Leyland_logo_PNG5.png') }}" alt="Header Image">
+    </header>
+    <div class="card">
+        <div class="search-form">
+              <h1>Search Page</h1>
+              <form action="/search" method="post">
+                  <input type="text" placeholder="Asset ID" name="asset_id" id="asset_id">
+                  <button type="submit">Search</button>
+              </form>
+      
+              <form action="/search" method="post">
+                  <input type="text" name="serial_number" placeholder="Serial Number" id="serial_number">
+                  <button type="submit">Search</button>
+              </form>
+          </div>
+      </div>
+</body>
+</html>
